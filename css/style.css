@@ -49,10 +49,6 @@ body {
   position: relative;
 }
 
-.signIn .in {
-  width: 341px;
-}
-
 .signIn .in input {
   width: 100%;
   background: #fff;
@@ -248,4 +244,34 @@ form .form-control input:focus + label span {
 form .form-control input:hover,
 form .form-control img:hover + input {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+  .login {
+    width: 50%;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .login .signUpOff,
+  .signIn,
+  .signUp,
+  .signInOff {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .login .signUpOff,
+  .signIn,
+  .signUp,
+  .signInOff {
+    padding: 70px 44px;
+  }
+  .signIn .check {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .signIn .check a {
+    margin-top: 5px;
+  }
 }
