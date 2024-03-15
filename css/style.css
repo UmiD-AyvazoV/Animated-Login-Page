@@ -275,3 +275,18 @@ form .form-control img:hover + input {
     margin-top: 5px;
   }
 }
+
+@media (max-width: 576px) {
+  .login .signUpOff,
+  .signIn,
+  .signUp,
+  .signInOff {
+    padding: 30px 20px;
+  }
+  .login h2 {
+    font-size: 25px !important;
+  }
+  .login p {
+    font-size: 12px !important;
+  }
+}
